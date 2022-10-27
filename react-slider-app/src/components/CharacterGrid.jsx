@@ -6,7 +6,7 @@ function CharacterGrid({ characters, isLoading }) {
   //console.log(characters, "here")
   return isLoading ? ( <h1>Loading..</h1>
   ) : (
-    <div>
+    <div className="gridContainer">
       {characters.map(character => (
         <CharacterItem key={character.uuid} character={character}></CharacterItem>
       ))}
