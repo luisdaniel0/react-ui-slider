@@ -10,11 +10,13 @@ const App = () => {
 
   useEffect(() => {
     const fetchCharacters = async () => {
-      const result = await axios.get(`https://valorant-api.com/v1/agents`)
-
-      setCharacters(result.data.data) //giving characters a value
-      setIsLoading(false)
-      
+      try {
+        const result = await axios.get(`https://valorant-api.com/v1/agents`)
+        setCharacters(result.data.data) //giving characters a value
+        setIsLoading(false)
+      } catch(error) {
+          console.log(error)
+      }
 
 
     }

@@ -4,12 +4,26 @@ import CharacterItem from './CharacterItem'
 
 function CharacterGrid({ characters, isLoading }) {
   //console.log(characters, "here")
-  return isLoading ? ( <h1>Loading..</h1>
+  let newCharacters = []
+  characters.map((character) => {
+    if (character.isPlayableCharacter === true) {
+      newCharacters.push(character)
+    }
+  }
+
+  )
+  console.log(newCharacters)
+  return isLoading ? (<h1>Loading..</h1>
   ) : (
     <div className="gridContainer">
-      {characters.map(character => (
+      {newCharacters.map(character => (
+        //if (character.isPlayableCharacter === true) {
         <CharacterItem key={character.uuid} character={character}></CharacterItem>
-      ))}
+        //  }
+      )
+
+      )}
+
 
     </div>
   )
