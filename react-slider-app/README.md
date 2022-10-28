@@ -1,6 +1,6 @@
 # Valorant Characters UI Layout 
   
-  Utilizing a third party API to develop a UI display layout of every character in Riot Games' tactical FPS shooter 'Valorant' and a small description of each character.
+  Utilizing a third party API to develop a UI display layout of every character in Riot Games' tactical FPS shooter 'Valorant'. A small description is given when user hovers over a character.
 
 
 # Deployed Site 
