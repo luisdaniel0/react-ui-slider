@@ -1,3 +1,21 @@
+# Valorant Characters UI Layout 
+  
+  Utilizing a third party API to develop a UI display layout of every character in Riot Games' tactical FPS shooter 'Valorant' and a small description of each character.
+
+
+# Deployed Site 
+(https://valorantuilayout.surge.sh/)
+
+# Technology used
+
+- React
+- Javascript
+- HTML
+- CSS
+- Git
+- Terminal
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
